@@ -1,6 +1,6 @@
 local vs = {}
-local config = require('tyler-pugmire_vs.config')
-local theme = require('tyler-pugmire_vs.theme')
+local config = require('mytheme.config')
+local theme = require('mytheme.theme')
 
 -- Pass setup to config module
 vs.setup = config.setup
