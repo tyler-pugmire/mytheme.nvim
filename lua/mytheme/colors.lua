@@ -30,16 +30,15 @@ colors.get_colors = function()
         Punctuation = '#dcdcdc',
         ControlFlow = '#d8a0df',
         PreprocessorKeyword = '#9b9b9b',
-
-        local config = require('tyler-pugmire_vs.config')
-        if config.opts.color_overrides then
-            mycolors = vim.tbl_extend('force', mycolors, config.opts.color_overrides)
-        end
     }
+    local config = require('mytheme.config')
+    if config.opts.color_overrides then
+        mycolors = vim.tbl_extend('force', mycolors, config.opts.color_overrides)
+    end
     return mycolors
 end
 
-colors.get_vscode = function()
+colors.get_vscolors = function()
     local mycolors = {} ---@type table<string,string>
 
     if vim.o.background == 'dark' then
